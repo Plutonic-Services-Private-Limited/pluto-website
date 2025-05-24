@@ -206,6 +206,7 @@ export const siteContent: SiteContent = {
       category: 'Mobile Development',
       technologies: ['React Native', 'Google Maps API', 'Stripe', 'Firebase'],
       image: 'https://placehold.co/800x450/2563eb/ffffff?text=Food+Delivery+App',
+      slug: 'food-delivery-app',
       link: '#',
       details: {
         client: 'Food Delivery Startup',
@@ -234,6 +235,7 @@ export const siteContent: SiteContent = {
       category: 'Web Development',
       technologies: ['React', 'D3.js', 'Node.js', 'MongoDB', 'AWS'],
       image: 'https://placehold.co/800x450/2563eb/ffffff?text=Marketing+Dashboard',
+      slug: 'marketing-dashboard',
       link: '#',
       details: {
         client: 'Marketing Agency',
@@ -262,6 +264,7 @@ export const siteContent: SiteContent = {
       category: 'Mobile Development',
       technologies: ['React Native', 'GraphQL', 'AWS', 'Redux', 'HealthKit'],
       image: 'https://placehold.co/800x450/2563eb/ffffff?text=Fitness+Tracking+App',
+      slug: 'fitness-tracking-app',
       link: '#',
       details: {
         client: 'Fitness Brand',

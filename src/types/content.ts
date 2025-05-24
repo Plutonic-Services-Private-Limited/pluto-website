@@ -54,9 +54,48 @@ export interface Company {
   phone: string;
 }
 
+export interface Stats {
+  projectsCompleted: number;
+  happyClients: number;
+  teamMembers: number;
+  yearsExperience: number;
+}
+
+export interface Testimonial {
+  name: string;
+  role: string;
+  content: string;
+  image: string;
+}
+
+export interface Client {
+  name: string;
+  logo: string;
+  website: string;
+}
+
+export interface TeamMember {
+  name: string;
+  role: string;
+  bio: string;
+  image: string;
+  social: {
+    linkedin?: string;
+    twitter?: string;
+    github?: string;
+    dribbble?: string;
+    instagram?: string;
+  };
+}
+
 export interface SiteContent {
   company: Company;
   services: Service[];
   projects: Project[];
   blog: BlogPost[];
+  stats: Stats;
+  testimonials: Testimonial[];
+  clients: Client[];
+  officeGlimpses: string[];
+  team: TeamMember[];
 } 

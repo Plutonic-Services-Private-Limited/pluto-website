@@ -1,30 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-
-interface Project {
-  title: string;
-  category: string;
-  description: string;
-  technologies: string[];
-  image: string;
-  slug?: string;
-  liveUrl?: string;
-  duration?: string;
-  challenge?: string;
-  solution?: string;
-  results?: string[];
-  link?: string;
-  details?: {
-    client: string;
-    duration: string;
-    challenge: string;
-    solution: string;
-    results: string[];
-    githubUrl: string;
-    gallery: string[];
-  };
-}
+import { Project } from '@/types/content';
 
 interface ProjectFiltersProps {
   projects: Project[];

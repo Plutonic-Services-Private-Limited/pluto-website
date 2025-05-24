@@ -7,12 +7,11 @@ import {
   MegaphoneIcon,
   CheckCircleIcon,
   MagnifyingGlassIcon,
-  ClipboardDocumentListIcon,
-  WrenchScrewdriverIcon,
-  RocketLaunchIcon
+  ClipboardDocumentListIcon
 } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
+import React from 'react';
 
 interface Service {
   title: string;
@@ -34,12 +33,6 @@ const iconMap = {
   MegaphoneIcon
 };
 
-const fadeInUp = {
-  initial: { opacity: 0, y: 20 },
-  animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.5 }
-};
-
 const ServicesClient = ({ services }: ServicesClientProps) => {
   return (
     <main className="bg-white">
@@ -58,12 +51,11 @@ const ServicesClient = ({ services }: ServicesClientProps) => {
       </section>
 
       {/* Services Grid */}
-      <section className="py-24 bg-gradient-to-b from-white to-gray-50">
+      <section className="py-20">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {services.map((service, index) => {
-              const Icon = iconMap[service.icon as keyof typeof iconMap];
-              return (
+          <div className="max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+              {services.map((service, index) => (
                 <motion.div
                   key={index}
                   initial={{ opacity: 0, y: 20 }}
@@ -71,114 +63,113 @@ const ServicesClient = ({ services }: ServicesClientProps) => {
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                 >
                   <Link href={service.link}>
-                    <div className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 p-10 h-full">
-                      <div className="flex items-center mb-8">
-                        <div className="w-16 h-16 bg-gradient-to-br from-indigo-600 to-indigo-700 rounded-2xl flex items-center justify-center mr-6 shadow-lg">
-                          <Icon className="w-8 h-8 text-white" />
-                        </div>
-                        <h2 className="text-2xl font-bold text-gray-900">{service.title}</h2>
+                    <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 h-full group">
+                      <div className="w-16 h-16 bg-indigo-100 rounded-xl flex items-center justify-center mb-6 group-hover:bg-indigo-600 transition-colors">
+                        {iconMap[service.icon as keyof typeof iconMap] && (
+                          React.createElement(iconMap[service.icon as keyof typeof iconMap], {
+                            className: "w-8 h-8 text-indigo-600 group-hover:text-white transition-colors"
+                          })
+                        )}
                       </div>
-                      <p className="text-gray-600 mb-8 text-lg leading-relaxed">{service.description}</p>
-                      <div className="mb-8">
-                        <h3 className="text-lg font-semibold text-gray-900 mb-4">Key Features</h3>
-                        <ul className="space-y-3">
-                          {service.features.map((feature, featureIndex) => (
-                            <li key={featureIndex} className="flex items-center text-gray-600">
-                              <CheckCircleIcon className="w-4 h-4 text-indigo-600 mr-2 flex-shrink-0" />
-                              <span className="text-base">{feature}</span>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                      <div>
-                        <h3 className="text-lg font-semibold text-gray-900 mb-4">Technologies We Use</h3>
-                        <div className="flex flex-wrap gap-2">
-                          {service.technologies.map((tech, techIndex) => (
-                            <span
-                              key={techIndex}
-                              className="px-4 py-2 bg-indigo-50 text-indigo-600 rounded-full text-sm font-medium hover:bg-indigo-100 transition-colors duration-300"
-                            >
-                              {tech}
-                            </span>
-                          ))}
-                        </div>
+                      <h3 className="text-xl font-bold text-gray-900 mb-4 group-hover:text-indigo-600 transition-colors">
+                        {service.title}
+                      </h3>
+                      <p className="text-gray-600 mb-6">{service.description}</p>
+                      <div className="flex items-center text-indigo-600 font-medium group-hover:translate-x-2 transition-transform">
+                        Learn More
+                        <svg
+                          className="w-4 h-4 ml-2"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M9 5l7 7-7 7"
+                          />
+                        </svg>
                       </div>
                     </div>
                   </Link>
                 </motion.div>
-              );
-            })}
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Process Section */}
-      <section className="py-24 bg-gradient-to-b from-gray-50 to-white">
+      {/* Features Section */}
+      <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Process</h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              We follow a proven process to ensure the success of every project we undertake.
-            </p>
-          </motion.div>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            {[
-              { icon: MagnifyingGlassIcon, title: 'Discovery', description: 'We begin by understanding your business goals and requirements.' },
-              { icon: ClipboardDocumentListIcon, title: 'Planning', description: 'We create a detailed project plan and timeline.' },
-              { icon: WrenchScrewdriverIcon, title: 'Execution', description: 'Our team builds your solution with regular updates.' },
-              { icon: RocketLaunchIcon, title: 'Delivery', description: 'We deploy your solution and provide ongoing support.' }
-            ].map((step, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="text-center group"
-              >
-                <div className="relative mb-8">
-                  <div className="w-20 h-20 bg-gradient-to-br from-indigo-600 to-indigo-700 rounded-2xl flex items-center justify-center mx-auto transform transition-all duration-300 group-hover:scale-110 group-hover:rotate-3 shadow-lg">
-                    <step.icon className="w-8 h-8 text-white" />
-                  </div>
-                  <div className="absolute -top-4 -right-4 w-8 h-8 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600 font-bold">
-                    {index + 1}
-                  </div>
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">
+                Why Choose Us
+              </h2>
+              <p className="text-xl text-gray-600">
+                We&apos;re committed to delivering exceptional results through our comprehensive approach.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div className="bg-white rounded-2xl p-8 shadow-sm">
+                <div className="w-16 h-16 bg-indigo-100 rounded-xl flex items-center justify-center mb-6">
+                  <CheckCircleIcon className="w-8 h-8 text-indigo-600" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">{step.title}</h3>
-                <p className="text-gray-600 leading-relaxed">
-                  {step.description}
+                <h3 className="text-xl font-bold text-gray-900 mb-4">
+                  Quality Assurance
+                </h3>
+                <p className="text-gray-600">
+                  We maintain the highest standards of quality in every project we undertake.
                 </p>
-              </motion.div>
-            ))}
+              </div>
+
+              <div className="bg-white rounded-2xl p-8 shadow-sm">
+                <div className="w-16 h-16 bg-indigo-100 rounded-xl flex items-center justify-center mb-6">
+                  <MagnifyingGlassIcon className="w-8 h-8 text-indigo-600" />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">
+                  Attention to Detail
+                </h3>
+                <p className="text-gray-600">
+                  We pay meticulous attention to every aspect of your project.
+                </p>
+              </div>
+
+              <div className="bg-white rounded-2xl p-8 shadow-sm">
+                <div className="w-16 h-16 bg-indigo-100 rounded-xl flex items-center justify-center mb-6">
+                  <ClipboardDocumentListIcon className="w-8 h-8 text-indigo-600" />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">
+                  Comprehensive Solutions
+                </h3>
+                <p className="text-gray-600">
+                  We provide end-to-end solutions that address all your business needs.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Contact CTA */}
-      <section className="relative py-32 bg-gradient-to-br from-indigo-600 to-indigo-800 overflow-hidden">
-        <div className="absolute inset-0 bg-grid-white/[0.05] bg-[size:60px_60px]" />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-indigo-900/50" />
-        <div className="container mx-auto px-4 relative">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="text-center"
-          >
-            <h2 className="text-4xl font-bold text-white mb-6">Ready to Get Started?</h2>
-            <p className="text-xl text-indigo-100 mb-12 max-w-2xl mx-auto leading-relaxed">
-              Let's discuss how we can help your business grow with our services.
+      {/* CTA Section */}
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">
+              Ready to Get Started?
+            </h2>
+            <p className="text-xl text-gray-600 mb-8">
+              Let&apos;s discuss how we can help you achieve your business goals.
             </p>
             <Link href="/contact">
-              <button className="bg-white text-indigo-600 hover:bg-indigo-50 px-8 py-4 text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300 font-semibold">
+              <button className="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-8 py-4 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5">
                 Contact Us
               </button>
             </Link>
-          </motion.div>
+          </div>
         </div>
       </section>
     </main>

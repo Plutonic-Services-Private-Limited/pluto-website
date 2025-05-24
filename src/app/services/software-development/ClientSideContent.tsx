@@ -1,6 +1,5 @@
 'use client';
 
-import { Row, Col, Card, Button } from 'antd';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -172,33 +171,26 @@ const ClientSideContent = ({ relatedProjects }: ClientSideContentProps) => {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">Related Projects</h2>
-          <Row gutter={[32, 32]}>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {relatedProjects.map((project, index) => (
-              <Col xs={24} md={8} key={index}>
-                <Link href={project.link}>
-                  <Card
-                    hoverable
-                    className="transition-transform duration-300 hover:scale-105"
-                    cover={
-                      <div className="relative h-48">
-                        <Image
-                          src={project.image}
-                          alt={project.title}
-                          fill
-                          className="object-cover"
-                        />
-                      </div>
-                    }
-                  >
-                    <Card.Meta
-                      title={project.title}
-                      description={project.description}
+              <Link href={project.link} key={index}>
+                <div className="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
+                  <div className="relative h-48">
+                    <Image
+                      src={project.image}
+                      alt={project.title}
+                      fill
+                      className="object-cover"
                     />
-                  </Card>
-                </Link>
-              </Col>
+                  </div>
+                  <div className="p-6">
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">{project.title}</h3>
+                    <p className="text-gray-600">{project.description}</p>
+                  </div>
+                </div>
+              </Link>
             ))}
-          </Row>
+          </div>
         </div>
       </section>
 
@@ -210,9 +202,9 @@ const ClientSideContent = ({ relatedProjects }: ClientSideContentProps) => {
             Let&apos;s discuss how we can help you achieve your business goals with our software development expertise.
           </p>
           <Link href="/contact">
-            <Button type="primary" size="large" className="bg-white text-indigo-600 hover:bg-indigo-50 px-8 py-4 h-auto text-lg">
+            <button className="bg-white text-indigo-600 hover:bg-indigo-50 px-8 py-4 text-lg font-semibold rounded-lg transition-colors duration-300">
               Get in Touch
-            </Button>
+            </button>
           </Link>
         </div>
       </section>

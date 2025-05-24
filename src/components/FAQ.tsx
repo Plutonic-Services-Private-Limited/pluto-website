@@ -18,10 +18,12 @@ const FAQ = ({ title = "Frequently Asked Questions", description, faqs, classNam
   const detailsRefs = useRef<(HTMLDetailsElement | null)[]>([]);
 
   useEffect(() => {
+    const refs = detailsRefs.current;
+    
     const handleToggle = (event: Event) => {
       const target = event.target as HTMLDetailsElement;
       if (target.open) {
-        detailsRefs.current.forEach((details) => {
+        refs.forEach((details) => {
           if (details && details !== target) {
             details.open = false;
           }
@@ -29,14 +31,14 @@ const FAQ = ({ title = "Frequently Asked Questions", description, faqs, classNam
       }
     };
 
-    detailsRefs.current.forEach((details) => {
+    refs.forEach((details) => {
       if (details) {
         details.addEventListener('toggle', handleToggle);
       }
     });
 
     return () => {
-      detailsRefs.current.forEach((details) => {
+      refs.forEach((details) => {
         if (details) {
           details.removeEventListener('toggle', handleToggle);
         }
@@ -59,7 +61,7 @@ const FAQ = ({ title = "Frequently Asked Questions", description, faqs, classNam
             {faqs.map((faq, index) => (
               <details
                 key={index}
-                ref={(el: HTMLDetailsElement | null) => {
+                ref={(el: HTMLDetailsElement | null): void => {
                   detailsRefs.current[index] = el;
                 }}
                 className="group bg-white rounded-lg shadow-sm [&_summary::-webkit-details-marker]:hidden"

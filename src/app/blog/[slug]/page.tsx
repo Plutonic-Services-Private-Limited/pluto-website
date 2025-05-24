@@ -5,14 +5,23 @@ import Link from 'next/link';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import ShareButtons from './ShareButtons';
+import { Metadata } from 'next';
 
-type Props = {
-  params: { slug: string }
-  searchParams: { [key: string]: string | string[] | undefined }
+type PageProps = {
+  params: Promise<{
+    slug: string;
+  }>;
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
 }
 
-export default async function BlogDetailPage({ params }: Props) {
-  const post = siteContent.blog.find(p => p.slug === params.slug);
+export const metadata: Metadata = {
+  title: 'Blog Post',
+  description: 'Read our latest blog post',
+};
+
+export default async function BlogDetailPage({ params, searchParams }: PageProps) {
+  const [resolvedParams] = await Promise.all([params, searchParams]);
+  const post = siteContent.blog.find(p => p.slug === resolvedParams.slug);
 
   if (!post) {
     notFound();

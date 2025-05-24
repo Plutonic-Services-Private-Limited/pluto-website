@@ -5,10 +5,11 @@ import Link from 'next/link';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
-interface ProjectDetailPageProps {
-  params: {
+type ProjectDetailPageProps = {
+  params: Promise<{
     slug: string;
-  };
+  }>;
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
 }
 
 interface ProjectMetric {
@@ -29,8 +30,9 @@ interface ProjectSection {
   type?: 'default' | 'multimedia' | 'marketing';
 }
 
-export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
-  const project = siteContent.projects.find(p => p.slug === params.slug);
+export default async function ProjectDetailPage({ params, searchParams }: ProjectDetailPageProps) {
+  const [resolvedParams] = await Promise.all([params, searchParams]);
+  const project = siteContent.projects.find(p => p.slug === resolvedParams.slug);
 
   if (!project) {
     notFound();
@@ -360,7 +362,7 @@ export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
             <div className="text-center max-w-3xl mx-auto">
               <h2 className="text-4xl font-bold text-gray-900 mb-6">Ready to Start Your Project?</h2>
               <p className="text-xl text-gray-600 mb-12">
-                Let's discuss how we can help bring your vision to life.
+                Let&apos;s discuss how we can help bring your vision to life.
               </p>
               <Link href="/contact">
                 <button className="bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-4 text-lg rounded-lg transition-colors duration-300">
