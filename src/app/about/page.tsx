@@ -6,6 +6,7 @@ import MissionVision from '@/components/MissionVision';
 import TeamGrid from '@/components/TeamGrid';
 import Image from 'next/image';
 import Link from 'next/link';
+import FAQ from '@/components/FAQ';
 
 export default function About() {
   const { company, stats, testimonials } = siteContent;
@@ -59,7 +60,7 @@ export default function About() {
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold text-gray-900 mb-4">What Our Clients Say</h2>
               <p className="text-gray-600 max-w-2xl mx-auto">
-                Don't just take our word for it. Here's what our clients have to say about working with us.
+                Don&apos;t just take our word for it. Here&apos;s what our clients have to say about working with us.
               </p>
             </div>
             <div className="grid md:grid-cols-3 gap-8">
@@ -85,6 +86,35 @@ export default function About() {
             </div>
           </div>
         </section>
+
+        {/* FAQ Section */}
+        <FAQ
+          title="About Us FAQ"
+          description="Learn more about our company, team, and working process."
+          faqs={[
+            {
+              question: "What is your company's mission?",
+              answer: "Our mission is to empower businesses through innovative digital solutions. We strive to deliver exceptional value to our clients while maintaining the highest standards of quality and professionalism."
+            },
+            {
+              question: "How do you select and train your team members?",
+              answer: "We carefully select team members based on their expertise, experience, and cultural fit. We invest in continuous training and professional development to ensure our team stays at the forefront of technology and industry best practices."
+            },
+            {
+              question: "What is your company's approach to innovation?",
+              answer: "Innovation is at our core. We encourage creative thinking, experimentation, and continuous learning. Our team regularly explores new technologies and methodologies to deliver cutting-edge solutions to our clients."
+            },
+            {
+              question: "How do you maintain quality across all projects?",
+              answer: "We have established rigorous quality control processes and best practices. Each project undergoes thorough testing and review phases, and we maintain detailed documentation to ensure consistency and excellence."
+            },
+            {
+              question: "What are your company's core values?",
+              answer: "Our core values include integrity, innovation, excellence, collaboration, and client satisfaction. These values guide our decisions and actions, ensuring we deliver the best possible service to our clients."
+            }
+          ]}
+          className="bg-white"
+        />
 
         {/* Contact CTA */}
         <section className="py-20 bg-blue-600">

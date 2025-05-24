@@ -11,7 +11,7 @@ const FeaturedProjects = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Featured Projects</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Explore our recent work and see how we've helped businesses transform their digital presence.
+            Explore our recent work and see how we&apos;ve helped businesses transform their digital presence.
             Each project represents our commitment to excellence and innovation.
           </p>
         </div>

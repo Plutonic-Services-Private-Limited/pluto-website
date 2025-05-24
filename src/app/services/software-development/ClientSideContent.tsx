@@ -207,7 +207,7 @@ const ClientSideContent = ({ relatedProjects }: ClientSideContentProps) => {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">Ready to Start Your Project?</h2>
           <p className="text-indigo-100 mb-8 max-w-2xl mx-auto">
-            Let's discuss how we can help you achieve your business goals with our software development expertise.
+            Let&apos;s discuss how we can help you achieve your business goals with our software development expertise.
           </p>
           <Link href="/contact">
             <Button type="primary" size="large" className="bg-white text-indigo-600 hover:bg-indigo-50 px-8 py-4 h-auto text-lg">

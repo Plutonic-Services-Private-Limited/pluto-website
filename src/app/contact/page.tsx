@@ -44,7 +44,7 @@ export default function Contact() {
                 Get in Touch
               </h1>
               <p className="text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
-                Have a project in mind? We'd love to hear from you. Send us a message and we'll respond as soon as possible.
+                Have a project in mind? We&apos;d love to hear from you. Send us a message and we&apos;ll respond as soon as possible.
               </p>
             </div>
           </div>

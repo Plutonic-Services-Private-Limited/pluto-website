@@ -174,7 +174,7 @@ export default function DigitalMarketingClient({ relatedProjects, subServices }:
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-6 text-white">Ready to Grow Your Business?</h2>
             <p className="text-xl text-indigo-100 mb-8">
-              Let's discuss how we can help you achieve your marketing goals with our digital marketing expertise.
+              Let&apos;s discuss how we can help you achieve your marketing goals with our digital marketing expertise.
             </p>
             <Link href="/contact" className="inline-block bg-white text-indigo-600 px-8 py-3 rounded-lg font-semibold hover:bg-indigo-50 transition-colors duration-300">
               Get in Touch

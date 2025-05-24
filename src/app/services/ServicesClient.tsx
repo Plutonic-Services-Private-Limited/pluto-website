@@ -5,14 +5,12 @@ import {
   PaintBrushIcon,
   VideoCameraIcon,
   MegaphoneIcon,
-  ArrowRightIcon,
   CheckCircleIcon,
   MagnifyingGlassIcon,
   ClipboardDocumentListIcon,
   WrenchScrewdriverIcon,
   RocketLaunchIcon
 } from '@heroicons/react/24/outline';
-import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 

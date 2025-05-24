@@ -11,7 +11,7 @@ const ClientLogos = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Trusted by Industry Leaders</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            We're proud to work with innovative companies across various industries.
+            We&apos;re proud to work with innovative companies across various industries.
             Our solutions have helped these organizations achieve their digital goals.
           </p>
         </div>
