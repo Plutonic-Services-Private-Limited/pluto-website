@@ -6,13 +6,14 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import ShareButtons from './ShareButtons';
 
-interface BlogDetailPageProps {
+interface PageProps {
   params: {
     slug: string;
   };
+  searchParams: { [key: string]: string | string[] | undefined };
 }
 
-export default function BlogDetailPage({ params }: BlogDetailPageProps) {
+export default function BlogDetailPage({ params }: PageProps) {
   const post = siteContent.blog.find(p => p.slug === params.slug);
 
   if (!post) {
