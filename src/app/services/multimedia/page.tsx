@@ -1,4 +1,3 @@
-import { siteContent } from '@/data/content';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import MultimediaClient from './MultimediaClient';
