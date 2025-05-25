@@ -1,5 +1,7 @@
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import Link from 'next/link';
+import Image from 'next/image';
 import DigitalMarketingClient from './DigitalMarketingClient';
 
 export default function DigitalMarketing() {
@@ -7,19 +9,19 @@ export default function DigitalMarketing() {
     {
       title: 'E-commerce Growth Campaign',
       description: 'Increased online sales by 200% through targeted digital marketing strategies.',
-      image: '/images/projects/ecommerce-campaign.jpg',
+      image: 'https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?q=80&w=2070&auto=format&fit=crop',
       slug: 'ecommerce-campaign'
     },
     {
       title: 'Brand Awareness Campaign',
       description: 'Successfully launched a new brand with comprehensive digital marketing.',
-      image: '/images/projects/brand-launch.jpg',
+      image: 'https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?q=80&w=2074&auto=format&fit=crop',
       slug: 'brand-launch'
     },
     {
       title: 'Lead Generation Strategy',
       description: 'Generated 500+ qualified leads through multi-channel marketing.',
-      image: '/images/projects/lead-gen.jpg',
+      image: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2070&auto=format&fit=crop',
       slug: 'lead-gen'
     }
   ];

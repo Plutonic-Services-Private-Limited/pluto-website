@@ -1,5 +1,7 @@
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import Link from 'next/link';
+import Image from 'next/image';
 import MultimediaClient from './MultimediaClient';
 
 export default function Multimedia() {
@@ -7,19 +9,19 @@ export default function Multimedia() {
     {
       title: "Brand Video Production",
       description: "Professional video production for brand storytelling",
-      image: "/images/projects/brand-video.jpg",
+      image: "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?q=80&w=2070&auto=format&fit=crop",
       slug: "brand-video"
     },
     {
       title: "Product Showcase",
       description: "Engaging product demonstration videos",
-      image: "/images/projects/product-showcase.jpg",
+      image: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=2070&auto=format&fit=crop",
       slug: "product-showcase"
     },
     {
       title: "Event Coverage",
       description: "Comprehensive event documentation and highlights",
-      image: "/images/projects/event-coverage.jpg",
+      image: "https://images.unsplash.com/photo-1614732414444-096e5f1122d5?q=80&w=2070&auto=format&fit=crop",
       slug: "event-coverage"
     }
   ];

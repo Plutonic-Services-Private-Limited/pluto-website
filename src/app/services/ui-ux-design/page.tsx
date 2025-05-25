@@ -1,5 +1,7 @@
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import Link from 'next/link';
+import Image from 'next/image';
 import UiUxDesignClient from './UiUxDesignClient';
 
 export default function UiUxDesign() {
@@ -7,38 +9,20 @@ export default function UiUxDesign() {
     {
       title: "E-commerce Redesign",
       description: "Complete UI/UX overhaul for a leading retail platform",
-      image: "/images/projects/ecommerce-redesign.jpg",
+      image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?q=80&w=2070&auto=format&fit=crop",
       slug: "ecommerce-redesign"
     },
     {
       title: "Mobile App Design",
       description: "User-centered design for a fitness tracking application",
-      image: "/images/projects/mobile-app.jpg",
+      image: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=2070&auto=format&fit=crop",
       slug: "mobile-app"
     },
     {
       title: "Dashboard Interface",
       description: "Intuitive analytics dashboard for enterprise clients",
-      image: "/images/projects/dashboard.jpg",
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop",
       slug: "dashboard"
-    },
-    {
-      title: "Banking App Redesign",
-      description: "Modern and secure banking interface design",
-      image: "/images/projects/banking-app.jpg",
-      slug: "banking-app"
-    },
-    {
-      title: "Healthcare Portal",
-      description: "Patient-friendly healthcare management interface",
-      image: "/images/projects/healthcare-portal.jpg",
-      slug: "healthcare-portal"
-    },
-    {
-      title: "Travel Platform",
-      description: "Seamless travel booking experience design",
-      image: "/images/projects/travel-platform.jpg",
-      slug: "travel-platform"
     }
   ];
 

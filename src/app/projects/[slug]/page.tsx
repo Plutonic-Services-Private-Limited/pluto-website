@@ -55,13 +55,13 @@ export default async function ProjectDetailPage({ params, searchParams }: Projec
   };
 
   // Use gallery images from project details or fallback to sample images
-  const galleryImages = details.gallery || [
-    project.image,
-    '/images/projects/gallery-1.jpg',
-    '/images/projects/gallery-2.jpg',
-    '/images/projects/gallery-3.jpg',
-    '/images/projects/gallery-4.jpg',
-    '/images/projects/gallery-5.jpg',
+  const galleryImages = [
+    'https://images.unsplash.com/photo-1563986768609-322da13575f3?w=1200&h=800&fit=crop',
+    'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&h=800&fit=crop',
+    'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=800&fit=crop',
+    'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=800&fit=crop',
+    'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1200&h=800&fit=crop',
+    'https://images.unsplash.com/photo-1551434678-e076c223a692?w=1200&h=800&fit=crop'
   ];
 
   // Define project sections with consistent structure
@@ -69,7 +69,7 @@ export default async function ProjectDetailPage({ params, searchParams }: Projec
     {
       title: 'Challenge',
       content: details.challenge,
-      image: galleryImages[1],
+      image: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=2070&auto=format&fit=crop',
       metrics: [
         { value: '3x', label: 'Growth Target', description: 'Expected business growth', color: 'indigo' },
         { value: '50%', label: 'Efficiency Goal', description: 'Target efficiency improvement', color: 'indigo' }
@@ -80,7 +80,7 @@ export default async function ProjectDetailPage({ params, searchParams }: Projec
     {
       title: 'Solution',
       content: details.solution,
-      image: galleryImages[2],
+      image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=2070&auto=format&fit=crop',
       features: [
         'Advanced Technology Stack',
         'Scalable Architecture',
@@ -94,7 +94,7 @@ export default async function ProjectDetailPage({ params, searchParams }: Projec
     {
       title: 'Results',
       content: 'Project outcomes and achievements',
-      image: galleryImages[3],
+      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop',
       metrics: [
         { value: '200%', label: 'Growth Achieved', description: 'Business growth', color: 'green' },
         { value: '60%', label: 'Efficiency Gain', description: 'Operational efficiency', color: 'green' }
@@ -105,7 +105,7 @@ export default async function ProjectDetailPage({ params, searchParams }: Projec
     {
       title: 'Impact',
       content: 'Business impact and user engagement',
-      image: galleryImages[4],
+      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2070&auto=format&fit=crop',
       metrics: [
         { value: '500K+', label: 'Active Users', description: 'Engaged with the platform', color: 'indigo' },
         { value: '4.8/5', label: 'User Satisfaction', description: 'Based on user feedback', color: 'indigo' }
@@ -121,7 +121,7 @@ export default async function ProjectDetailPage({ params, searchParams }: Projec
       {
         title: 'Media Production',
         content: 'High-quality media content creation and production',
-        image: galleryImages[5] || galleryImages[0],
+        image: 'https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?q=80&w=2070&auto=format&fit=crop',
         metrics: [
           { value: '100+', label: 'Videos Produced', description: 'Professional video content', color: 'blue' },
           { value: '50+', label: 'Graphics Created', description: 'Custom visual assets', color: 'blue' }
@@ -132,7 +132,7 @@ export default async function ProjectDetailPage({ params, searchParams }: Projec
       {
         title: 'Content Strategy',
         content: 'Strategic content planning and execution',
-        image: galleryImages[6] || galleryImages[1],
+        image: 'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=2070&auto=format&fit=crop',
         features: [
           'Video Production',
           'Motion Graphics',
@@ -151,7 +151,7 @@ export default async function ProjectDetailPage({ params, searchParams }: Projec
       {
         title: 'Campaign Performance',
         content: 'Digital marketing campaign results and metrics',
-        image: galleryImages[5] || galleryImages[0],
+        image: 'https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?q=80&w=2074&auto=format&fit=crop',
         metrics: [
           { value: '1M+', label: 'Reach', description: 'Total audience reached', color: 'green' },
           { value: '100K+', label: 'Engagement', description: 'User interactions', color: 'green' }
@@ -162,7 +162,7 @@ export default async function ProjectDetailPage({ params, searchParams }: Projec
       {
         title: 'ROI & Analytics',
         content: 'Campaign return on investment and analytics',
-        image: galleryImages[6] || galleryImages[1],
+        image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop',
         metrics: [
           { value: '300%', label: 'ROI', description: 'Return on investment', color: 'green' },
           { value: '50%', label: 'Conversion Rate', description: 'Lead to customer conversion', color: 'green' }
@@ -173,7 +173,7 @@ export default async function ProjectDetailPage({ params, searchParams }: Projec
       {
         title: 'Channel Performance',
         content: 'Performance across different marketing channels',
-        image: galleryImages[7] || galleryImages[2],
+        image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop',
         features: [
           'Social Media Marketing',
           'Search Engine Optimization',
@@ -225,12 +225,14 @@ export default async function ProjectDetailPage({ params, searchParams }: Projec
               )}
             </div>
             <div className={`order-2 ${isLeft ? 'md:order-2' : 'md:order-1'}`}>
-              <div className="relative h-64 md:h-96 rounded-xl overflow-hidden">
+              <div className="relative aspect-[4/3] rounded-xl overflow-hidden shadow-lg">
                 <Image
                   src={section.image}
                   alt={section.title}
                   fill
                   className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  priority={index === 0}
                 />
               </div>
             </div>

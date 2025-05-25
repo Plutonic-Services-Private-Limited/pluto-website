@@ -1,50 +1,28 @@
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import SoftwareDevelopmentClient from '@/app/services/software-development/SoftwareDevelopmentClient';
+import Link from 'next/link';
+import Image from 'next/image';
 
 export default function SoftwareDevelopment() {
   const relatedProjects = [
     {
-      title: "Enterprise Resource Planning System",
-      description: "A comprehensive ERP solution that streamlines business operations and improves efficiency.",
-      image: "/images/projects/erp.jpg",
-      slug: "enterprise-resource-planning"
-    },
-    {
-      title: "E-commerce Platform",
-      description: "A modern e-commerce platform with advanced features and seamless user experience.",
-      image: "/images/projects/ecommerce.jpg",
+      title: "E-commerce Platform Development",
+      description: "Built a scalable e-commerce platform with advanced features like real-time inventory management and secure payment processing.",
+      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=2070&auto=format&fit=crop",
       slug: "ecommerce-platform"
     },
     {
-      title: "Mobile Banking App",
-      description: "A secure and user-friendly mobile banking application with real-time transaction capabilities.",
-      image: "/images/projects/banking.jpg",
-      slug: "mobile-banking-app"
+      title: "Mobile App Development",
+      description: "Developed a cross-platform mobile application with offline capabilities and push notifications.",
+      image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=2070&auto=format&fit=crop",
+      slug: "mobile-app"
     },
     {
-      title: "Healthcare Management System",
-      description: "Comprehensive healthcare management solution",
-      image: "/images/projects/healthcare-system.jpg",
-      slug: "healthcare-system"
-    },
-    {
-      title: "Inventory Management System",
-      description: "Real-time inventory tracking and management",
-      image: "/images/projects/inventory-system.jpg",
-      slug: "inventory-system"
-    },
-    {
-      title: "Learning Management Platform",
-      description: "Interactive e-learning platform with analytics",
-      image: "/images/projects/learning-platform.jpg",
-      slug: "learning-platform"
-    },
-    {
-      title: "Supply Chain Solution",
-      description: "End-to-end supply chain management system",
-      image: "/images/projects/supply-chain.jpg",
-      slug: "supply-chain"
+      title: "Enterprise Software Solution",
+      description: "Created a comprehensive enterprise software solution for managing business operations and workflows.",
+      image: "https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2070&auto=format&fit=crop",
+      slug: "enterprise-software"
     }
   ];
 
