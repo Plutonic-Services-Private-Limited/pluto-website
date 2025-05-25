@@ -2,8 +2,6 @@ import { siteContent } from '@/data/content';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import SoftwareDevelopmentClient from '@/app/services/software-development/SoftwareDevelopmentClient';
-import Link from 'next/link';
-import Image from 'next/image';
 
 export default function SoftwareDevelopment() {
   const relatedProjects = [
