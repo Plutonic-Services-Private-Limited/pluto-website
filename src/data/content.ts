@@ -14,32 +14,24 @@ export const siteContent: SiteContent = {
   services: [
     {
       title: 'Software Development',
-      description: 'We build innovative and scalable software solutions that drive digital transformation and business growth.',
+      description: 'Comprehensive software solutions tailored to your business needs, from web applications to AI-powered systems.',
       icon: 'CodeBracketIcon',
       link: '/services/software-development',
       features: [
         'Website Development',
         'AI Solutions',
-        'Mobile App Development',
+        'Mobile Applications',
         'IoT Development',
         'Web Applications',
-        'E-commerce Solutions',
+        'E-commerce Platforms',
         'API Integration',
-        'DevOps & CI/CD',
-        'Cloud Solutions',
-        'System Architecture'
+        'DevOps Services'
       ],
-      technologies: [
-        'Next.js', 'React', 'Node.js', 'Python',
-        'TensorFlow', 'React Native', 'Flutter',
-        'AWS IoT', 'Docker', 'Kubernetes',
-        'MongoDB', 'PostgreSQL', 'GraphQL',
-        'AWS', 'Azure', 'GCP'
-      ],
+      technologies: ['React', 'Node.js', 'Python', 'AWS', 'Docker', 'Kubernetes']
     },
     {
       title: 'Multimedia',
-      description: 'We create compelling visual content that strengthens your brand identity and engages your audience.',
+      description: 'Creative design solutions that bring your brand to life through compelling visual content and packaging.',
       icon: 'VideoCameraIcon',
       link: '/services/multimedia',
       features: [
@@ -48,72 +40,39 @@ export const siteContent: SiteContent = {
         'Video Editing',
         'Brochure Design',
         'Brand Book Creation',
-        'Logo Design',
-        'Social Media Graphics',
-        'Print Materials',
-        'Motion Graphics',
-        '3D Design'
+        'Motion Graphics'
       ],
-      technologies: [
-        'Adobe Creative Suite',
-        'Adobe Illustrator',
-        'Adobe Photoshop',
-        'Adobe InDesign',
-        'Adobe Premiere Pro',
-        'After Effects',
-        'Cinema 4D',
-        'Blender',
-        'Figma',
-        'Canva Pro'
-      ],
+      technologies: ['Adobe Creative Suite', 'Final Cut Pro', 'After Effects', 'Illustrator', 'Photoshop']
     },
     {
       title: 'UI/UX Design',
-      description: 'We craft intuitive, engaging, and user-centered digital experiences that delight users and drive business success.',
+      description: 'User-centered design solutions that create intuitive and engaging digital experiences.',
       icon: 'PaintBrushIcon',
       link: '/services/ui-ux-design',
       features: [
-        'User Interface (UI) Design',
-        'User Experience (UX) Design',
-        'User Research & Testing',
-        'Wireframing & Prototyping',
-        'Design Systems & Style Guides',
-        'Mobile App Design',
-        'Responsive Web Design',
-        'Interaction Design',
-        'Accessibility Design',
-        'Brand Identity Design'
+        'User Interface Design',
+        'User Experience Design',
+        'Wireframing',
+        'Prototyping',
+        'User Research',
+        'Usability Testing'
       ],
-      technologies: [
-        'Figma', 'Adobe XD', 'Sketch',
-        'InVision', 'Principle', 'Adobe Creative Suite',
-        'Zeplin', 'Abstract', 'Maze',
-        'Optimal Workshop', 'UserTesting'
-      ],
+      technologies: ['Figma', 'Sketch', 'Adobe XD', 'InVision', 'Principle']
     },
     {
       title: 'Digital Marketing',
-      description: 'We create data-driven digital marketing strategies that increase brand visibility, drive engagement, and deliver measurable results.',
+      description: 'Strategic digital marketing solutions to boost your online presence and drive business growth.',
       icon: 'MegaphoneIcon',
       link: '/services/digital-marketing',
       features: [
         'Social Media Marketing',
         'Email Marketing',
-        'Search Engine Optimization (SEO)',
+        'Search Engine Optimization',
         'Performance Marketing',
         'Ads Marketing',
-        'Influencer Marketing',
-        'Content Strategy',
-        'Analytics & Reporting',
-        'Brand Strategy',
-        'Marketing Automation'
+        'Influencer Marketing'
       ],
-      technologies: [
-        'Google Analytics', 'Google Ads', 'Facebook Ads',
-        'LinkedIn Ads', 'HubSpot', 'Mailchimp',
-        'SEMrush', 'Ahrefs', 'Moz', 'Hotjar',
-        'Optimizely', 'WordPress', 'Shopify'
-      ],
+      technologies: ['Google Analytics', 'Facebook Ads', 'Google Ads', 'Mailchimp', 'SEMrush']
     },
   ],
   projects: [
@@ -122,7 +81,7 @@ export const siteContent: SiteContent = {
       description: 'A modern e-commerce platform with advanced features and seamless user experience.',
       category: 'Web Development',
       technologies: ['Next.js', 'React', 'Node.js', 'MongoDB', 'Stripe'],
-      image: 'https://placehold.co/800x450/2563eb/ffffff?text=E-commerce+Platform',
+      image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=450&fit=crop',
       slug: 'ecommerce-platform',
       liveUrl: 'https://example.com/ecommerce',
       duration: '3 months',
@@ -140,7 +99,7 @@ export const siteContent: SiteContent = {
       description: 'A secure and user-friendly mobile banking application with real-time transaction features.',
       category: 'Mobile Development',
       technologies: ['React Native', 'Node.js', 'PostgreSQL', 'AWS'],
-      image: 'https://placehold.co/800x450/2563eb/ffffff?text=Mobile+Banking+App',
+      image: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&h=450&fit=crop',
       slug: 'mobile-banking-app',
       liveUrl: 'https://example.com/banking',
       duration: '4 months',
@@ -158,7 +117,7 @@ export const siteContent: SiteContent = {
       description: 'An intelligent analytics platform that provides real-time insights and predictions.',
       category: 'Data Science',
       technologies: ['Python', 'TensorFlow', 'React', 'D3.js', 'PostgreSQL'],
-      image: 'https://placehold.co/800x450/2563eb/ffffff?text=AI+Analytics+Dashboard',
+      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=450&fit=crop',
       slug: 'ai-analytics-dashboard',
       liveUrl: 'https://example.com/analytics',
       duration: '5 months',
@@ -176,7 +135,7 @@ export const siteContent: SiteContent = {
       description: 'A responsive corporate website with modern design and CMS integration.',
       category: 'Web Development',
       technologies: ['Next.js', 'Sanity CMS', 'Tailwind CSS', 'Framer Motion'],
-      image: 'https://placehold.co/800x450/2563eb/ffffff?text=Corporate+Website',
+      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=450&fit=crop',
       slug: 'corporate-website',
       link: '#',
       details: {
@@ -192,11 +151,11 @@ export const siteContent: SiteContent = {
         ],
         githubUrl: 'https://github.com/plutonic/corporate-website',
         gallery: [
-          'https://placehold.co/800x450/2563eb/ffffff?text=Corporate+Website+1',
-          'https://placehold.co/800x450/2563eb/ffffff?text=Corporate+Website+2',
-          'https://placehold.co/800x450/2563eb/ffffff?text=Corporate+Website+3',
-          'https://placehold.co/800x450/2563eb/ffffff?text=Corporate+Website+4',
-          'https://placehold.co/800x450/2563eb/ffffff?text=Corporate+Website+5',
+          'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=450&fit=crop',
+          'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&h=450&fit=crop',
+          'https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&h=450&fit=crop',
+          'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=450&fit=crop',
+          'https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=450&fit=crop',
         ],
       },
     },
@@ -205,7 +164,7 @@ export const siteContent: SiteContent = {
       description: 'A real-time food delivery application with order tracking and payment integration.',
       category: 'Mobile Development',
       technologies: ['React Native', 'Google Maps API', 'Stripe', 'Firebase'],
-      image: 'https://placehold.co/800x450/2563eb/ffffff?text=Food+Delivery+App',
+      image: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&h=450&fit=crop',
       slug: 'food-delivery-app',
       link: '#',
       details: {
@@ -221,11 +180,11 @@ export const siteContent: SiteContent = {
         ],
         githubUrl: 'https://github.com/plutonic/food-delivery-app',
         gallery: [
-          'https://placehold.co/800x450/2563eb/ffffff?text=Food+Delivery+1',
-          'https://placehold.co/800x450/2563eb/ffffff?text=Food+Delivery+2',
-          'https://placehold.co/800x450/2563eb/ffffff?text=Food+Delivery+3',
-          'https://placehold.co/800x450/2563eb/ffffff?text=Food+Delivery+4',
-          'https://placehold.co/800x450/2563eb/ffffff?text=Food+Delivery+5',
+          'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&h=450&fit=crop',
+          'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800&h=450&fit=crop',
+          'https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&h=450&fit=crop',
+          'https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=800&h=450&fit=crop',
+          'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800&h=450&fit=crop',
         ],
       },
     },
@@ -234,7 +193,7 @@ export const siteContent: SiteContent = {
       description: 'An analytics dashboard for tracking marketing campaigns and performance.',
       category: 'Web Development',
       technologies: ['React', 'D3.js', 'Node.js', 'MongoDB', 'AWS'],
-      image: 'https://placehold.co/800x450/2563eb/ffffff?text=Marketing+Dashboard',
+      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=450&fit=crop',
       slug: 'marketing-dashboard',
       link: '#',
       details: {
@@ -250,11 +209,11 @@ export const siteContent: SiteContent = {
         ],
         githubUrl: 'https://github.com/plutonic/marketing-dashboard',
         gallery: [
-          'https://placehold.co/800x450/2563eb/ffffff?text=Marketing+Dashboard+1',
-          'https://placehold.co/800x450/2563eb/ffffff?text=Marketing+Dashboard+2',
-          'https://placehold.co/800x450/2563eb/ffffff?text=Marketing+Dashboard+3',
-          'https://placehold.co/800x450/2563eb/ffffff?text=Marketing+Dashboard+4',
-          'https://placehold.co/800x450/2563eb/ffffff?text=Marketing+Dashboard+5',
+          'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=450&fit=crop',
+          'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=450&fit=crop',
+          'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&h=450&fit=crop',
+          'https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&h=450&fit=crop',
+          'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=450&fit=crop',
         ],
       },
     },
@@ -263,7 +222,7 @@ export const siteContent: SiteContent = {
       description: 'A comprehensive fitness tracking application with workout plans and progress monitoring.',
       category: 'Mobile Development',
       technologies: ['React Native', 'GraphQL', 'AWS', 'Redux', 'HealthKit'],
-      image: 'https://placehold.co/800x450/2563eb/ffffff?text=Fitness+Tracking+App',
+      image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=450&fit=crop',
       slug: 'fitness-tracking-app',
       link: '#',
       details: {
@@ -279,11 +238,11 @@ export const siteContent: SiteContent = {
         ],
         githubUrl: 'https://github.com/plutonic/fitness-app',
         gallery: [
-          'https://placehold.co/800x450/2563eb/ffffff?text=Fitness+App+1',
-          'https://placehold.co/800x450/2563eb/ffffff?text=Fitness+App+2',
-          'https://placehold.co/800x450/2563eb/ffffff?text=Fitness+App+3',
-          'https://placehold.co/800x450/2563eb/ffffff?text=Fitness+App+4',
-          'https://placehold.co/800x450/2563eb/ffffff?text=Fitness+App+5',
+          'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=450&fit=crop',
+          'https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=800&h=450&fit=crop',
+          'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=450&fit=crop',
+          'https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=800&h=450&fit=crop',
+          'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=450&fit=crop',
         ],
       },
     },
@@ -292,7 +251,7 @@ export const siteContent: SiteContent = {
       description: 'Complete brand identity design including logo, color palette, and visual guidelines.',
       category: 'Multimedia, Branding',
       technologies: ['Adobe Illustrator', 'Adobe Photoshop', 'Figma'],
-      image: 'https://placehold.co/800x450/2563eb/ffffff?text=Brand+Identity',
+      image: 'https://images.unsplash.com/photo-1634942537034-2531766767d1?w=800&h=450&fit=crop',
       slug: 'brand-identity-design',
       liveUrl: 'https://example.com/brand-identity',
       duration: '2 months',
@@ -310,7 +269,7 @@ export const siteContent: SiteContent = {
       description: 'Comprehensive digital marketing campaign for a new product launch.',
       category: 'Digital Marketing, Social Media',
       technologies: ['Google Ads', 'Facebook Ads', 'Instagram Ads', 'Analytics'],
-      image: 'https://placehold.co/800x450/2563eb/ffffff?text=Product+Launch',
+      image: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&h=450&fit=crop',
       slug: 'product-launch-campaign',
       liveUrl: 'https://example.com/product-launch',
       duration: '3 months',
@@ -328,7 +287,7 @@ export const siteContent: SiteContent = {
       description: 'Series of promotional and educational videos for a tech company.',
       category: 'Multimedia, Video Production',
       technologies: ['Adobe Premiere Pro', 'After Effects', 'Cinema 4D'],
-      image: 'https://placehold.co/800x450/2563eb/ffffff?text=Video+Series',
+      image: 'https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=800&h=450&fit=crop',
       slug: 'video-production-series',
       liveUrl: 'https://example.com/video-series',
       duration: '4 months',
@@ -346,7 +305,7 @@ export const siteContent: SiteContent = {
       description: 'Integrated social media marketing campaign across multiple platforms.',
       category: 'Digital Marketing, Social Media',
       technologies: ['Facebook Ads', 'Instagram Ads', 'LinkedIn Ads', 'Analytics'],
-      image: 'https://placehold.co/800x450/2563eb/ffffff?text=Social+Media',
+      image: 'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=800&h=450&fit=crop',
       slug: 'social-media-campaign',
       liveUrl: 'https://example.com/social-campaign',
       duration: '2 months',
@@ -364,7 +323,7 @@ export const siteContent: SiteContent = {
       description: 'Custom motion graphics and animations for a marketing campaign.',
       category: 'Multimedia, Animation',
       technologies: ['After Effects', 'Cinema 4D', 'Adobe Illustrator'],
-      image: 'https://placehold.co/800x450/2563eb/ffffff?text=Motion+Graphics',
+      image: 'https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=800&h=450&fit=crop',
       slug: 'motion-graphics-package',
       liveUrl: 'https://example.com/motion-graphics',
       duration: '1 month',
@@ -382,7 +341,7 @@ export const siteContent: SiteContent = {
       description: 'Comprehensive SEO strategy and implementation for improved search rankings.',
       category: 'Digital Marketing, SEO',
       technologies: ['Google Analytics', 'SEMrush', 'Ahrefs', 'WordPress'],
-      image: 'https://placehold.co/800x450/2563eb/ffffff?text=SEO+Campaign',
+      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=450&fit=crop',
       slug: 'seo-optimization-campaign',
       liveUrl: 'https://example.com/seo-campaign',
       duration: '6 months',
@@ -406,7 +365,7 @@ export const siteContent: SiteContent = {
       tags: ['Web Development', 'Technology', 'Future Trends'],
       author: 'John Doe',
       date: 'March 15, 2024',
-      image: '/images/blog/web-dev.jpg'
+      image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=450&fit=crop'
     },
     {
       title: 'AI in Digital Marketing',
@@ -417,7 +376,7 @@ export const siteContent: SiteContent = {
       tags: ['AI', 'Digital Marketing', 'Technology'],
       author: 'Jane Smith',
       date: 'March 10, 2024',
-      image: '/images/blog/ai-marketing.jpg'
+      image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800&h=450&fit=crop'
     },
     {
       title: 'UI/UX Design Best Practices',
@@ -428,7 +387,7 @@ export const siteContent: SiteContent = {
       tags: ['UI/UX', 'Design', 'Best Practices'],
       author: 'Mike Johnson',
       date: 'March 5, 2024',
-      image: '/images/blog/ui-ux.jpg'
+      image: 'https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&h=450&fit=crop'
     }
   ],
   team: [
@@ -436,7 +395,7 @@ export const siteContent: SiteContent = {
       name: 'John Doe',
       role: 'CEO & Founder',
       bio: 'With over 15 years of experience in digital technology, John leads our team with vision and expertise.',
-      image: 'https://placehold.co/400x400/2563eb/ffffff?text=John+Doe',
+      image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop',
       social: {
         linkedin: '#',
         twitter: '#',
@@ -447,7 +406,7 @@ export const siteContent: SiteContent = {
       name: 'Jane Smith',
       role: 'Lead Designer',
       bio: 'Jane brings 10 years of UI/UX design experience, creating beautiful and intuitive user experiences.',
-      image: 'https://placehold.co/400x400/2563eb/ffffff?text=Jane+Smith',
+      image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop',
       social: {
         linkedin: '#',
         twitter: '#',
@@ -458,7 +417,7 @@ export const siteContent: SiteContent = {
       name: 'Mike Johnson',
       role: 'Lead Developer',
       bio: 'Mike is a full-stack developer with expertise in modern web technologies and cloud architecture.',
-      image: 'https://placehold.co/400x400/2563eb/ffffff?text=Mike+Johnson',
+      image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop',
       social: {
         linkedin: '#',
         twitter: '#',
@@ -469,7 +428,7 @@ export const siteContent: SiteContent = {
       name: 'Sarah Wilson',
       role: 'Digital Marketing Director',
       bio: 'Sarah specializes in digital marketing strategies and has helped numerous businesses grow their online presence.',
-      image: 'https://placehold.co/400x400/2563eb/ffffff?text=Sarah+Wilson',
+      image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop',
       social: {
         linkedin: '#',
         twitter: '#',
@@ -480,46 +439,106 @@ export const siteContent: SiteContent = {
       name: 'Emily Carter',
       role: 'Project Manager',
       bio: 'Emily ensures every project runs smoothly and on time.',
-      image: 'https://placehold.co/400x400/2563eb/ffffff?text=Emily+Carter',
+      image: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&h=400&fit=crop',
       social: { linkedin: '#', twitter: '#' }
     },
-    { name: 'Alex Lee', role: 'Backend Developer', bio: 'Alex builds robust server-side solutions.', image: 'https://placehold.co/400x400/2563eb/ffffff?text=Alex+Lee', social: { linkedin: '#', github: '#' } },
-    { name: 'Priya Patel', role: 'Frontend Developer', bio: 'Priya crafts beautiful, responsive interfaces.', image: 'https://placehold.co/400x400/2563eb/ffffff?text=Priya+Patel', social: { linkedin: '#', github: '#' } },
-    { name: 'Carlos Gomez', role: 'QA Engineer', bio: 'Carlos ensures our products are bug-free.', image: 'https://placehold.co/400x400/2563eb/ffffff?text=Carlos+Gomez', social: { linkedin: '#', twitter: '#' } },
-    { name: 'Linda Zhang', role: 'Content Strategist', bio: 'Linda creates compelling content strategies.', image: 'https://placehold.co/400x400/2563eb/ffffff?text=Linda+Zhang', social: { linkedin: '#', twitter: '#' } },
-    { name: 'Tom Brown', role: 'DevOps Engineer', bio: 'Tom automates and optimizes our infrastructure.', image: 'https://placehold.co/400x400/2563eb/ffffff?text=Tom+Brown', social: { linkedin: '#', github: '#' } },
-    { name: 'Nina Rossi', role: 'UI Designer', bio: 'Nina designs stunning user interfaces.', image: 'https://placehold.co/400x400/2563eb/ffffff?text=Nina+Rossi', social: { linkedin: '#', dribbble: '#' } },
-    { name: 'Omar Farouk', role: 'Mobile Developer', bio: 'Omar builds seamless mobile experiences.', image: 'https://placehold.co/400x400/2563eb/ffffff?text=Omar+Farouk', social: { linkedin: '#', github: '#' } },
-    { name: 'Sophie Dubois', role: 'HR Manager', bio: 'Sophie fosters a great team culture.', image: 'https://placehold.co/400x400/2563eb/ffffff?text=Sophie+Dubois', social: { linkedin: '#', twitter: '#' } },
-    { name: 'Ivan Petrov', role: 'Data Scientist', bio: 'Ivan turns data into actionable insights.', image: 'https://placehold.co/400x400/2563eb/ffffff?text=Ivan+Petrov', social: { linkedin: '#', github: '#' } },
-    { name: 'Mia Kim', role: 'Support Lead', bio: 'Mia ensures our clients are always happy.', image: 'https://placehold.co/400x400/2563eb/ffffff?text=Mia+Kim', social: { linkedin: '#', twitter: '#' } },
+    { 
+      name: 'Alex Lee', 
+      role: 'Backend Developer', 
+      bio: 'Alex builds robust server-side solutions.', 
+      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop', 
+      social: { linkedin: '#', github: '#' } 
+    },
+    { 
+      name: 'Priya Patel', 
+      role: 'Frontend Developer', 
+      bio: 'Priya crafts beautiful, responsive interfaces.', 
+      image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop', 
+      social: { linkedin: '#', github: '#' } 
+    },
+    { 
+      name: 'Carlos Gomez', 
+      role: 'QA Engineer', 
+      bio: 'Carlos ensures our products are bug-free.', 
+      image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop', 
+      social: { linkedin: '#', twitter: '#' } 
+    },
+    { 
+      name: 'Linda Zhang', 
+      role: 'Content Strategist', 
+      bio: 'Linda creates compelling content strategies.', 
+      image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=400&fit=crop', 
+      social: { linkedin: '#', twitter: '#' } 
+    },
+    { 
+      name: 'Tom Brown', 
+      role: 'DevOps Engineer', 
+      bio: 'Tom automates and optimizes our infrastructure.', 
+      image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop', 
+      social: { linkedin: '#', github: '#' } 
+    },
+    { 
+      name: 'Nina Rossi', 
+      role: 'UI Designer', 
+      bio: 'Nina designs stunning user interfaces.', 
+      image: 'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=400&h=400&fit=crop', 
+      social: { linkedin: '#', dribbble: '#' } 
+    },
+    { 
+      name: 'Omar Farouk', 
+      role: 'Mobile Developer', 
+      bio: 'Omar builds seamless mobile experiences.', 
+      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop', 
+      social: { linkedin: '#', github: '#' } 
+    },
+    { 
+      name: 'Sophie Dubois', 
+      role: 'HR Manager', 
+      bio: 'Sophie fosters a great team culture.', 
+      image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=400&fit=crop', 
+      social: { linkedin: '#', twitter: '#' } 
+    },
+    { 
+      name: 'Ivan Petrov', 
+      role: 'Data Scientist', 
+      bio: 'Ivan turns data into actionable insights.', 
+      image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop', 
+      social: { linkedin: '#', github: '#' } 
+    },
+    { 
+      name: 'Mia Kim', 
+      role: 'Support Lead', 
+      bio: 'Mia ensures our clients are always happy.', 
+      image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=400&fit=crop', 
+      social: { linkedin: '#', twitter: '#' } 
+    },
   ],
   officeGlimpses: [
-    'https://placehold.co/800x450/2563eb/ffffff?text=Office+1',
-    'https://placehold.co/800x450/2563eb/ffffff?text=Office+2',
-    'https://placehold.co/800x450/2563eb/ffffff?text=Office+3',
-    'https://placehold.co/800x450/2563eb/ffffff?text=Office+4',
-    'https://placehold.co/800x450/2563eb/ffffff?text=Office+5',
-    'https://placehold.co/800x450/2563eb/ffffff?text=Office+6',
+    'https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=450&fit=crop',
+    'https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=800&h=450&fit=crop',
+    'https://images.unsplash.com/photo-1497215728101-856f4ea42174?w=800&h=450&fit=crop',
+    'https://images.unsplash.com/photo-1497215842964-222b430dc094?w=800&h=450&fit=crop',
+    'https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=800&h=450&fit=crop',
+    'https://images.unsplash.com/photo-1497215842964-222b430dc094?w=800&h=450&fit=crop',
   ],
   testimonials: [
     {
       name: 'David Brown',
       role: 'CEO, TechStart',
       content: 'Plutonic transformed our digital presence completely. Their team\'s expertise and dedication to our project was outstanding.',
-      image: 'https://placehold.co/400x400/2563eb/ffffff?text=David+Brown',
+      image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop',
     },
     {
       name: 'Emily Chen',
       role: 'Marketing Director, GrowthCo',
       content: 'Working with Plutonic has been a game-changer for our business. Their digital marketing strategies have significantly increased our online reach.',
-      image: 'https://placehold.co/400x400/2563eb/ffffff?text=Emily+Chen',
+      image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop',
     },
     {
       name: 'Michael Rodriguez',
       role: 'Founder, FoodDelivery',
       content: 'The mobile app Plutonic developed for us has received outstanding feedback from our customers. Their attention to detail and user experience is remarkable.',
-      image: 'https://placehold.co/400x400/2563eb/ffffff?text=Michael+Rodriguez',
+      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop',
     },
   ],
   stats: {
@@ -531,127 +550,127 @@ export const siteContent: SiteContent = {
   clients: [
     {
       name: 'TechCorp',
-      logo: 'https://placehold.co/200x100/2563eb/ffffff?text=TechCorp',
+      logo: 'https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=200&h=100&fit=crop',
       website: 'https://techcorp.com'
     },
     {
       name: 'InnovateX',
-      logo: 'https://placehold.co/200x100/2563eb/ffffff?text=InnovateX',
+      logo: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=200&h=100&fit=crop',
       website: 'https://innovatex.com'
     },
     {
       name: 'GlobalTech',
-      logo: 'https://placehold.co/200x100/2563eb/ffffff?text=GlobalTech',
+      logo: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=200&h=100&fit=crop',
       website: 'https://globaltech.com'
     },
     {
       name: 'FutureSystems',
-      logo: 'https://placehold.co/200x100/2563eb/ffffff?text=FutureSystems',
+      logo: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=200&h=100&fit=crop',
       website: 'https://futuresystems.com'
     },
     {
       name: 'SmartSolutions',
-      logo: 'https://placehold.co/200x100/2563eb/ffffff?text=SmartSolutions',
+      logo: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=200&h=100&fit=crop',
       website: 'https://smartsolutions.com'
     },
     {
       name: 'DataDynamics',
-      logo: 'https://placehold.co/200x100/2563eb/ffffff?text=DataDynamics',
+      logo: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=200&h=100&fit=crop',
       website: 'https://datadynamics.com'
     },
     {
       name: 'CloudNine',
-      logo: 'https://placehold.co/200x100/2563eb/ffffff?text=CloudNine',
+      logo: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=200&h=100&fit=crop',
       website: 'https://cloudnine.com'
     },
     {
       name: 'DigitalWave',
-      logo: 'https://placehold.co/200x100/2563eb/ffffff?text=DigitalWave',
+      logo: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=200&h=100&fit=crop',
       website: 'https://digitalwave.com'
     },
     {
       name: 'TechVision',
-      logo: 'https://placehold.co/200x100/2563eb/ffffff?text=TechVision',
+      logo: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=200&h=100&fit=crop',
       website: 'https://techvision.com'
     },
     {
       name: 'InnovateHub',
-      logo: 'https://placehold.co/200x100/2563eb/ffffff?text=InnovateHub',
+      logo: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=200&h=100&fit=crop',
       website: 'https://innovatehub.com'
     },
     {
       name: 'SmartTech',
-      logo: 'https://placehold.co/200x100/2563eb/ffffff?text=SmartTech',
+      logo: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=200&h=100&fit=crop',
       website: 'https://smarttech.com'
     },
     {
       name: 'FutureTech',
-      logo: 'https://placehold.co/200x100/2563eb/ffffff?text=FutureTech',
+      logo: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=200&h=100&fit=crop',
       website: 'https://futuretech.com'
     },
     {
       name: 'DataFlow',
-      logo: 'https://placehold.co/200x100/2563eb/ffffff?text=DataFlow',
+      logo: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=200&h=100&fit=crop',
       website: 'https://dataflow.com'
     },
     {
       name: 'CloudTech',
-      logo: 'https://placehold.co/200x100/2563eb/ffffff?text=CloudTech',
+      logo: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=200&h=100&fit=crop',
       website: 'https://cloudtech.com'
     },
     {
       name: 'DigitalEdge',
-      logo: 'https://placehold.co/200x100/2563eb/ffffff?text=DigitalEdge',
+      logo: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=200&h=100&fit=crop',
       website: 'https://digitaledge.com'
     },
     {
       name: 'TechMatrix',
-      logo: 'https://placehold.co/200x100/2563eb/ffffff?text=TechMatrix',
+      logo: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=200&h=100&fit=crop',
       website: 'https://techmatrix.com'
     },
     {
       name: 'InnovatePro',
-      logo: 'https://placehold.co/200x100/2563eb/ffffff?text=InnovatePro',
+      logo: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=200&h=100&fit=crop',
       website: 'https://innovatepro.com'
     },
     {
       name: 'SmartSystems',
-      logo: 'https://placehold.co/200x100/2563eb/ffffff?text=SmartSystems',
+      logo: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=200&h=100&fit=crop',
       website: 'https://smartsystems.com'
     },
     {
       name: 'FutureWave',
-      logo: 'https://placehold.co/200x100/2563eb/ffffff?text=FutureWave',
+      logo: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=200&h=100&fit=crop',
       website: 'https://futurewave.com'
     },
     {
       name: 'DataTech',
-      logo: 'https://placehold.co/200x100/2563eb/ffffff?text=DataTech',
+      logo: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=200&h=100&fit=crop',
       website: 'https://datatech.com'
     },
     {
       name: 'CloudMatrix',
-      logo: 'https://placehold.co/200x100/2563eb/ffffff?text=CloudMatrix',
+      logo: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=200&h=100&fit=crop',
       website: 'https://cloudmatrix.com'
     },
     {
       name: 'DigitalPro',
-      logo: 'https://placehold.co/200x100/2563eb/ffffff?text=DigitalPro',
+      logo: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=200&h=100&fit=crop',
       website: 'https://digitalpro.com'
     },
     {
       name: 'TechWave',
-      logo: 'https://placehold.co/200x100/2563eb/ffffff?text=TechWave',
+      logo: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=200&h=100&fit=crop',
       website: 'https://techwave.com'
     },
     {
       name: 'InnovateTech',
-      logo: 'https://placehold.co/200x100/2563eb/ffffff?text=InnovateTech',
+      logo: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=200&h=100&fit=crop',
       website: 'https://innovatetech.com'
     },
     {
       name: 'SmartMatrix',
-      logo: 'https://placehold.co/200x100/2563eb/ffffff?text=SmartMatrix',
+      logo: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=200&h=100&fit=crop',
       website: 'https://smartmatrix.com'
     }
   ]

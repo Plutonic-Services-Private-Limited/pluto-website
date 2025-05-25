@@ -21,14 +21,14 @@ const Navbar = () => {
   return (
     <header className="fixed w-full bg-white/80 backdrop-blur-md z-50 px-0">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-20">
           <Link href="/" className="flex-shrink-0">
             <Image
               src="/images/plutonic_logo.png"
               alt="Plutonic Logo"
-              width={120}
-              height={40}
-              className="h-10 w-auto"
+              width={140}
+              height={48}
+              className="h-12 w-auto"
             />
           </Link>
 
@@ -38,7 +38,7 @@ const Navbar = () => {
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             <svg
-              className="h-6 w-6"
+              className="h-7 w-7"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -67,7 +67,7 @@ const Navbar = () => {
               <Link
                 key={item.key}
                 href={item.key}
-                className={`text-sm font-medium transition-colors duration-200 ${
+                className={`text-base font-medium transition-colors duration-200 ${
                   pathname === item.key
                     ? 'text-indigo-600'
                     : 'text-gray-600 hover:text-gray-900'
@@ -80,7 +80,7 @@ const Navbar = () => {
 
           {/* Mobile menu */}
           {isMenuOpen && (
-            <div className="lg:hidden absolute top-16 left-0 right-0 bg-white shadow-lg">
+            <div className="lg:hidden absolute top-20 left-0 right-0 bg-white shadow-lg">
               <div className="px-2 pt-2 pb-3 space-y-1">
                 {menuItems.map((item) => (
                   <Link
