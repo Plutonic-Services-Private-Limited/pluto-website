@@ -1,7 +1,6 @@
+import { siteContent } from '@/data/content';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import Link from 'next/link';
-import Image from 'next/image';
 import MultimediaClient from './MultimediaClient';
 
 export default function Multimedia() {
